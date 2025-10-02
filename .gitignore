@@ -1,0 +1,63 @@
+# ---------------------------
+# Python / Jupyter Basics
+# ---------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyo
+*.pyd
+*.pkl
+*.pickle
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+*.pyenv
+.python-version
+
+# VSCode / PyCharm settings
+.vscode/
+.idea/
+
+# ---------------------------
+# Project-Specific
+# ---------------------------
+
+# Data files (Yelp dataset, intermediate samples)
+data/
+*.csv
+# *.json
+*.tsv
+*.parquet
+
+# Joblib or caching artifacts
+*.joblib
+*.cache/
+cache/
+
+# Model outputs
+*.h5
+*.pt
+*.onnx
+*.bin
+
+# Folders
+dataset_complete_actual/
+scratch_work_files
+
+# Logs
+*.log
+
+# ---------------------------
+# System Files
+# ---------------------------
+.DS_Store
+Thumbs.db
