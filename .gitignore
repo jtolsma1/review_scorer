@@ -8,8 +8,8 @@ __pycache__/
 *.egg-info/
 *.pyo
 *.pyd
-*.pkl
-*.pickle
+# *.pkl
+# *.pickle
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
@@ -34,7 +34,7 @@ ENV/
 # Data files (Yelp dataset, intermediate samples)
 data/
 *.csv
-# *.json
+*.json
 *.tsv
 *.parquet
 
