@@ -33,6 +33,28 @@ Yelp could build an 'emotion selector' step for each review, but LLM-based chara
   - Tracks reprocessing statistics to measure LLM reliability.  
   - In testing, < 1% of outputs required retries.
 
+## Real Model Outputs
+The model output helps users to select restaurants for their needs and set their expectations:
+
+* **Bourbon & Branch**<br>
+Consider this upscale bar for a fancy date or formal event afterparty<br>
+<img src = "misc/bourbon_branch.png" format = "png" width = "500"></img><br><br>
+
+* **Sher-e-Punjab**<br>
+Bring your family for a casual evening of amazing cuisine and unpretentous atmosphere<br>
+<img src = "misc/sher-e-punjab.png" format = "png" width = "500"></img><br><br>
+
+* **Copabanana**<br>
+If you're going to go here, be prepared to exercise patience with the staff<br>
+<img src = "misc/copabanana.png" format = "png" width = "500"></img><br><br>
+
+* **Reprocessing Statistics**<br>
+  - A common LLM failure mode is selecting an emotion not requested by the prompt (examples include "misled" and "bland")
+  - These failures are handled in the reprocessing workflow
+  - Reprocessing statistics show how successful the LLM is at creating the asked-for outputs<br>
+<img src = "misc/reprocess_stats.png" format = "png" width = "650"></img><br><br>
+
+
 ## Installation & Setup
 
 ### 1. Install Ollama
@@ -90,28 +112,6 @@ This notebook uses a local instance of an LLM, which requires Ollama. Download a
    ```
 
 3. **Execute the notebook** to process and visualize review content
-
-
-## Real Model Outputs
-The model output helps users to select restaurants for their needs and set their expectations:
-
-* **Bourbon & Branch**<br>
-Consider this upscale bar for a fancy date or formal event afterparty<br>
-<img src = "misc/bourbon_branch.png" format = "png" width = "500"></img><br><br>
-
-* **Sher-e-Punjab**<br>
-Bring your family for a casual evening of amazing cuisine and unpretentous atmosphere<br>
-<img src = "misc/sher-e-punjab.png" format = "png" width = "500"></img><br><br>
-
-* **Copabanana**<br>
-If you're going to go here, be prepared to exercise patience with the staff<br>
-<img src = "misc/copabanana.png" format = "png" width = "500"></img><br><br>
-
-* **Reprocessing Statistics**<br>
-  - A common LLM failure mode is selecting an emotion not requested by the prompt (examples include "misled" and "bland")
-  - These failures are handled in the reprocessing workflow
-  - Reprocessing statistics show how successful the LLM is at creating the asked-for outputs<br>
-<img src = "misc/reprocess_stats.png" format = "png" width = "650"></img><br><br>
 
 
 ## Project Structure
